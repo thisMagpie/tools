@@ -42,13 +42,13 @@ alias qps="ps -fe"
 alias p3get="python3 setup.py install --user"
 alias pyget="python setup.py install --user"
 
-# Python:ROOT:Install
+# Python:ROOT:Install ###
 pysudo="sudo python"
 alias rp3get="$pysudo3 setup.py install"
 alias rpyget="$pysudo setup.py install"
 alias piget="sudo pip install"
 
-# IPython Commands:notebook
+# iPython Commands:notebook
 alias nbinline="ipython notebook inline --pylab"  # Or try executing an IPython Shell
 												  # from a custom gnome-terminal profile!
 # Extraction:Source
@@ -60,17 +60,18 @@ alias eget="sudo easy_install" # Apply with caution or remove sudo
                                # enough to install systemwide
 
 alias replace="nohup gnome-shell --replace &"
-alias jhreplace="nohup jhbuild run gnome-shell --replace &"
+
 alias jhgs="jhbuild buildone -nafc gnome-shell"
 
 # There are tines when jhbuild cannot find a repo
 # clone it manually but don't forget to run 
 # with jhbuild arguments or it will get messy             
 alias jharg="./autogen.sh --prefix=$pfix --libdir=$pfix --disable-static"
-
 # Development:GNOME-Shell
 alias gsdir="cd $chkout/gnome-shell"
 alias uidir="cd $chkout/gnome-shell"
+
+alias jhreplace="nohup jhbuild run gnome-shell --replace &"
 
 # Development:Git
 alias gcln="git clean -X -f -d"
@@ -106,11 +107,11 @@ alias get="sudo yum install -y"
 alias distsync="sudo yum distro-sync --skip-broken"
 
 # Fedora:Remove
-alias rm32="sudo remove *.i686" # TODO make sure there is no debris left over
-alias yrm="sudo remove -y" # Remove the y if you want a prompt
+alias rm32="sudo yum remove *.i686" # TODO make sure there is no debris left over
+alias yrm="sudo yum remove -y" # Remove the y if you want a prompt
 
 # Fedora:Update
-alias updt="sudo yum update --bugfix --security --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree --enablerepo=rpmfusion-free-updates --enablerepo=rpmfusion-nonfree-updates --enablerepo=fedora --enablerepo=fedora-updates --skip-broken"
+alias updt="sudo yum update --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree --enablerepo=rpmfusion-free-updates --enablerepo=rpmfusion-nonfree-updates --enablerepo=fedora --enablerepo=fedora-source --bugfix --security --skip-broken"
 
 # Fedora:LocateYumDirs
 alias yumdir="echo '/etc/yum.conf\n
