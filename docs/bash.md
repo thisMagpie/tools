@@ -1,35 +1,49 @@
-BASH(1)                                                                                    General Commands Manual                                                                                    BASH(1)
+## BASH                                                                                
+
+#### General Commands Manual          
 
 
 
-NAME
-       bash - GNU Bourne-Again SHell
+#### NAME
+bash - GNU Bourne-Again Shell
 
-SYNOPSIS
-       bash [options] [file]
+#### SYNOPSIS
+bash [options] [file]
 
-COPYRIGHT
-       Bash is Copyright (C) 1989-2011 by the Free Software Foundation, Inc.
+#### COPYRIGHT
+Bash is Copyright (C) 1989-2011 by the Free Software Foundation, Inc.
 
-DESCRIPTION
-       Bash  is an sh-compatible command language interpreter that executes commands read from the standard input or from a file.  Bash also incorporates useful features from the Korn and C shells (ksh and
-       csh).
+#### DESCRIPTION
+Bash  is an sh-compatible command language interpreter that executes commands read from the standard input or from a file.  
 
-       Bash is intended to be a conformant implementation of the Shell and Utilities portion of the IEEE POSIX specification (IEEE Standard 1003.1).  Bash  can  be  configured  to  be  POSIX-conformant  by
+Bash also incorporates useful features from the Korn and C shells (ksh and csh).
+
+Bash is intended to be a conformant implementation of the Shell and Utilities portion of the IEEE POSIX specification (IEEE Standard 1003.1).  Bash  can  be  configured  to  be  POSIX-conformant  by
        default.
 
-OPTIONS
-       All  of  the   single-character  shell  options documented in the description of the set builtin command can be used as options when the shell is invoked.  In addition, bash interprets the following
+#### OPTIONS
+All  of  the   single-character  shell  options documented in the description of the set builtin command can be used as options when the shell is invoked.  In addition, bash interprets the following
        options when it is invoked:
 
-       -c string If the -c option is present, then commands are read from string.  If there are arguments after the string, they are assigned to the positional parameters, starting with $0.
-       -i        If the -i option is present, the shell is interactive.
-       -l        Make bash act as if it had been invoked as a login shell (see INVOCATION below).
-       -r        If the -r option is present, the shell becomes restricted (see RESTRICTED SHELL below).
-       -s        If the -s option is present, or if no arguments remain after option processing, then commands are read from the standard input.  This option allows the positional parameters to be set when
-                 invoking an interactive shell.
-       -D        A  list  of  all  double-quoted strings preceded by $ is printed on the standard output.  These are the strings that are subject to language translation when the current locale is not C or
-                 POSIX.  This implies the -n option; no commands will be executed.
+       -c string
+If the -c option is present, then commands are read from string.  If there are arguments after the string, they are assigned to the positional parameters, starting with $0.
+
+       -i        
+If the -i option is present, the shell is interactive.
+
+       -l        
+Make bash act as if it had been invoked as a login shell (see INVOCATION below).
+
+       -r        
+If the -r option is present, the shell becomes restricted (see RESTRICTED SHELL below).
+
+       -s        
+
+If the -s option is present, or if no arguments remain after option processing, then commands are read from the standard input.  This option allows the positional parameters to be set when invoking an interactive shell.
+
+       -D        
+A  list  of  all  double-quoted strings preceded by $ is printed on the standard output.  These are the strings that are subject to language translation when the current locale is not C or POSIX.  This implies the -n option; no commands will be executed.
+
        [-+]O [shopt_option]
                  shopt_option is one of the shell options accepted by the shopt builtin (see SHELL BUILTIN COMMANDS below).  If shopt_option is present, -O sets the value of that option; +O unsets it.   If
                  shopt_option  is not supplied, the names and values of the shell options accepted by shopt are printed on the standard output.  If the invocation option is +O, the output is displayed in a
@@ -77,7 +91,7 @@ OPTIONS
        --version
               Show version information for this instance of bash on the standard output and exit successfully.
 
-ARGUMENTS
+#### ARGUMENTS
        If arguments remain after option processing, and neither the -c nor the -s option has been supplied, the first argument is assumed to be the name of a file containing shell  commands.   If  bash  is
        invoked  in  this  fashion, $0 is set to the name of the file, and the positional parameters are set to the remaining arguments.  Bash reads and executes commands from this file, then exits.  Bash's
        exit status is the exit status of the last command executed in the script.  If no commands are executed, the exit status is 0.  An attempt is first made to open the file in  the  current  directory,
