@@ -95,14 +95,13 @@ Valid names are:
 
      WRAP_EDGE
 
+To Synchronise ChromeVox's internal cursor to the targetNode use:
 
-```
-cvox.Api.syncToNode(targetNode)
-```
-Synchronizes !ChromeVox's internal cursor to the targetNode.
+   cvox.Api.syncToNode(targetNode)
+
 
 Note that this will NOT trigger reading; it is only for setting the internal !ChromeVox cursor so that when the user resumes reading, they will be starting from a reasonable position.
 
- * targetNode*  The node that !ChromeVox should be synced to.
+   targetNode  The node that !ChromeVox should be synced to.
 
 [Click here for the JS file](http://code.google.com/p/google-axs-chrome/source/browse/trunk/chromevox/chromevox/injected/api.js)that defines the ChromeVox API.
