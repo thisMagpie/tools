@@ -14,22 +14,24 @@ The following JavaScript methods are available:
 ```
 cvox.Api.speak(textString, queueMode, properties)
 ```
-Where textString is he string of text to be spoken, queueMode has valid modes of 0 for flush and 1 for queue and properties for speech properties to use for this utterance.
+Where textString is the string of text to be spoken, queueMode has valid modes of 0 for flush and 1 for queue and properties for speech properties to use for this utterance.
+
 ```
 queueMode
 
 ```
-    * *properties*  Speech properties to use for this utterance.
+####Properties  
 
-  ```cvox.Api.stop()```
+Speech properties to use for this utterance.
+
+####cvox.Api.stop()```
     Stops speech.
 
-```cvox.Api.playEarcon(earcon)```
+####cvox.Api.playEarcon(earcon)
+
 Plays the specified earcon sound.
 
-    * ```earcon``` An earcon name.
-
-Valid names are:
+####earcon An earcon name. Valid names are:
 
      ALERT_MODAL
 
@@ -93,11 +95,14 @@ Valid names are:
 
 To Synchronise ChromeVox's internal cursor to the targetNode use:
 
-   cvox.Api.syncToNode(targetNode)
-
+```
+cvox.Api.syncToNode(targetNode)
+```
 
 Note that this will NOT trigger reading; it is only for setting the internal !ChromeVox cursor so that when the user resumes reading, they will be starting from a reasonable position.
 
-   targetNode  The node that !ChromeVox should be synced to.
+####targetNode
 
-[Click here for the JS file](http://code.google.com/p/google-axs-chrome/source/browse/trunk/chromevox/chromevox/injected/api.js)that defines the ChromeVox API.
+The node that !ChromeVox should be synced to.
+
+[The Javascript file](http://code.google.com/p/google-axs-chrome/source/browse/trunk/chromevox/chromevox/injected/api.js that defines the ChromeVox API)
