@@ -11,18 +11,14 @@ These APIs allow web developers to make !ChromeVox speak custom messages, play e
 
 The following JavaScript methods are available:
 
-```cvox.Api.speak(textString, queueMode, properties)
 ```
-    * textString  The string of text to be spoken.
-
-    * *queueMode*   Valid modes are 0 for flush; 1 for queue.
-
-    * *properties*  Speech properties to use for this utterance.
+cvox.Api.speak(textString, queueMode, properties)
+```
+Where textString is he string of text to be spoken, queueMode has valid modes of 0 for flush and 1 for queue and properties for speech properties to use for this utterance.
 ```
 queueMode
 
 ```
-
     * *properties*  Speech properties to use for this utterance.
 
   ```cvox.Api.stop()```
