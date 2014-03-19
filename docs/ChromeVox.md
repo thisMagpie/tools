@@ -34,7 +34,7 @@ Plays the specified earcon sound.
     * ```earcon``` An earcon name.
 
 Valid names are:
-```
+
      ALERT_MODAL
 
      ALERT_NONMODAL
@@ -94,7 +94,7 @@ Valid names are:
      WRAP
 
      WRAP_EDGE
-```
+
 
 ```
 cvox.Api.syncToNode(targetNode)
