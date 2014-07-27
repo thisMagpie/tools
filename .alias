@@ -123,3 +123,6 @@ alias yumdir="echo '/etc/yum.conf\n
 # Misc
 alias add="cd $HOME; vi .alias" # Note, vi itself is also an alias
 alias dsend="dbus-send --session --print-reply --dest='org.freedesktop.DBus' /org/freedesktop/DBus org.freedesktop.DBus.ListActivatableNames"
+
+# FFTW Gem development
+alias fftw="cd $HOME/.rvm/gems/ruby-2.1.2/gems/fftw; rvm use ruby-2.1.2"
