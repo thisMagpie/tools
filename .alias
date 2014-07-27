@@ -20,6 +20,7 @@ chkout="$HOME/checkout/gnome"
 
 # Bash:ls
 alias la="ls -la --size"
+alias ls="ls -GFh"
 
 # Bash:grep
 alias grr="grep -nrH"
