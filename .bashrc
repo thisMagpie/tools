@@ -67,3 +67,7 @@ se () {
 
 # Set up PATH
 export PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/.local/bin:$HOME/.config
+
+# Set up C and C++ includes
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/atlas:/usr/include
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include/atlas:/usr/include
