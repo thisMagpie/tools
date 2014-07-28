@@ -13,6 +13,16 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Run .alias file which has aliases stored.
+if [ -f $HOME/.alias ]; then
+  . ~/.alias
+fi
+
 # Colourd prompt
 export PS1="\033\[\032\]\032\[\033m\]$ "
 export CLICOLOR=1
