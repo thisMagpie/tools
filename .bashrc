@@ -64,3 +64,6 @@ extract () {
 se () {
   for f in $(locate $1); do dirname $f; done | uniq
 }
+
+# Set up PATH
+export PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/.local/bin:$HOME/.config
