@@ -74,3 +74,5 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include/atlas:/usr/include
 
 # Set up PKG_CONFIG_PATH for finding *.pc files
 export PKG_CONFIG_PATH=$HOME/.rvm/rubies/ruby-2.1.2/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/python2.7/test:/usr/lib64/python3.3/test:/usr/share/doc/alsa-firmware:/usr/share/mime/application:/usr/share/pkgconfig
+
+source ~/.profile
