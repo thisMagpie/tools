@@ -126,3 +126,8 @@ alias dsend="dbus-send --session --print-reply --dest='org.freedesktop.DBus' /or
 
 # FFTW Gem development
 alias fftw="cd $HOME/.rvm/gems/ruby-2.1.2/gems/fftw; rvm use ruby-2.1.2"
+
+# Ruby
+alias cln='bundle exec rake clean && bundle rake clobber'
+alias rrc='bundle exec rake compile'
+alias rrs='bundle exec rake spec'
