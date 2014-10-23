@@ -92,30 +92,30 @@ alias gcomall="git commit -a"
 alias gcko="git checkout -b"
 
 # Fedora:Queries
-alias pk="pkcon search name" # expects an 'argument'
-alias Av="grep Available"
-alias In="grep Installed"
-alias 64="grep Installed | grep x86_64"  # this will not show no_arch packages
-alias na="grep Installed | grep no_arch" 
+# alias pk="pkcon search name" # expects an 'argument'
+# alias Av="grep Available"
+# alias In="grep Installed"
+# alias 64="grep Installed | grep x86_64"  # this will not show no_arch packages
+# alias na="grep Installed | grep no_arch" 
 
-alias in32="grep Installed | grep i686"
-alias deps="sudo yum deplist installed --showduplicates --verbose --enableplugin=whiteout" 
+# alias in32="grep Installed | grep i686"
+# alias deps="sudo yum deplist installed --showduplicates --verbose --enableplugin=whiteout" 
 
-alias extras="yum list distro-extras"
+# alias extras="yum list distro-extras"
 
 # Fedora:Install 
-alias get="sudo yum install -y"
-alias distsync="sudo yum distro-sync --skip-broken"
+# alias get="sudo yum install -y"
+# alias distsync="sudo yum distro-sync --skip-broken"
 
 # Fedora:Remove
-alias rm32="sudo yum remove *.i686" # TODO make sure there is no debris left over
-alias yrm="sudo yum remove -y" # Remove the y if you want a prompt
+# alias rm32="sudo yum remove *.i686" # TODO make sure there is no debris left over
+# alias yrm="sudo yum remove -y" # Remove the y if you want a prompt
 
 # Fedora:Update
-alias updt="sudo yum update --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree --enablerepo=rpmfusion-free-updates --enablerepo=rpmfusion-nonfree-updates --enablerepo=fedora --enablerepo=fedora-source --bugfix --security --skip-broken"
+# alias updt="sudo yum update --enablerepo=rpmfusion-free --enablerepo=rpmfusion-nonfree --enablerepo=rpmfusion-free-updates --enablerepo=rpmfusion-nonfree-updates --enablerepo=fedora --enablerepo=fedora-source --bugfix --security --skip-broken"
 
 # Fedora:LocateYumDirs
-alias yumdir="echo '/etc/yum.conf\n
+# alias yumdir="echo '/etc/yum.conf\n
                     /etc/yum/version-groups.conf
                     /etc/yum.repos.d/
                     /etc/yum/pluginconf.d/
