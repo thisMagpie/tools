@@ -18,6 +18,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+if [ -f ~/.profile ]; then
+    source ~/.profile
+fi
+
 # Run .alias file which has aliases stored.
 if [ -f $HOME/.alias ]; then
   . ~/.alias
@@ -27,11 +31,6 @@ fi
 export PS1="\033\[\032\]\032\[\033m\]$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
-
-
-alias ls='ls -GFh'
-# Run .alias file which has aliases stored.
-. ~/.alias
 
 export PATH="$PATH:$HOME/.rvm/bin:$HOME/bin"
 
@@ -74,5 +73,3 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include/atlas:/usr/include
 
 # Set up PKG_CONFIG_PATH for finding *.pc files
 export PKG_CONFIG_PATH=$HOME/.rvm/rubies/ruby-2.1.2/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/python2.7/test:/usr/lib64/python3.3/test:/usr/share/doc/alsa-firmware:/usr/share/mime/application:/usr/share/pkgconfig
-
-source ~/.profile
