@@ -59,16 +59,8 @@ extract () {
 se () {
   for f in $(locate $1); do dirname $f; done | uniq
 }
-
 # Set up PATH
-export PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/.local/bin:$HOME/.config
-
-# Set up C and C++ includes
-export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/include/atlas:/usr/include
-export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/include/atlas:/usr/include
-
-# Set up PKG_CONFIG_PATH for finding *.pc files
-export PKG_CONFIG_PATH=$HOME/.rvm/rubies/ruby-2.1.2/lib/pkgconfig:/usr/lib64/pkgconfig:/usr/lib64/python2.7/test:/usr/lib64/python3.3/test:/usr/share/doc/alsa-firmware:/usr/share/mime/application:/usr/share/pkgconfig
+export PATH=$PATH:$HOME/.local/bin
 
 if [ -f ~/.profile ]; then
     source ~/.profile
