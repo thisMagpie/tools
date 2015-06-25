@@ -29,3 +29,7 @@ set wildmode=list:longest,full
 
 " Enable mouse
 set mouse=a
+
+filetype plugin indent on
+syntax on
+
