@@ -1,7 +1,5 @@
 #!/bin/bash
 
-cd $HOME/checkout/gnome
-
 for i in *; do
   if [ -d $i ]; then
     cd $i;
