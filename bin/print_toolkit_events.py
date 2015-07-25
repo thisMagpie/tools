@@ -28,8 +28,8 @@ def on_key_input(event):
     pyatspi.Registry.stop()
 
 def print_changed(event):
-  if (event.source)
-    if event.host_application.name == 'gtk3-demo' || event.host_application.name == 'SwingSet3':
+  if (event.source):
+    if event.host_application.name == 'gtk3-demo' or event.host_application.name == 'SwingSet3':
       if event.source.getState().contains(pyatspi.STATE_MANAGES_DESCENDANTS):
         print("contains pyatspi.STATE_MANAGES_DESCENDANTS")
 
