@@ -65,3 +65,4 @@ export PATH=$PATH:$HOME/.local/bin
 if [ -f ~/.profile ]; then
     source ~/.profile
 fi
+export CFLAGS= -g -Wall -02
