@@ -28,16 +28,15 @@ def on_key_input(event):
     pyatspi.Registry.stop()
 
 def print_changed(event):
-  if (event.source):
-    if event.host_application.name == 'gtk3-demo' or event.host_application.name == 'SwingSet3':
-      if event.source.getState().contains(pyatspi.STATE_MANAGES_DESCENDANTS):
-        print("contains pyatspi.STATE_MANAGES_DESCENDANTS")
+  if event.host_application.name == "gtk3-demo" or event.host_application.name == "SwingSet3":
+    if event.source.getState().contains(pyatspi.STATE_MANAGES_DESCENDANTS):
+      print("contains pyatspi.STATE_MANAGES_DESCENDANTS")
 
-      print("[{0}]  ~ [{1}] ==> [{2}:{3} {4}]").format(event.host_application.name,
-                                                       event.source.getRoleName(),
-                                                       event.type,
-                                                       event.detail1,
-                                                       event.detail2)
+    print("[{0}]  ~ [{1}] ==> [{2}:{3} {4}]").format(event.host_application.name,
+                                                     event.source.getRoleName(),
+                                                     event.type,
+                                                     event.detail1,
+                                                     event.detail2)
   else:
     return
 
