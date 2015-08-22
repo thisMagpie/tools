@@ -54,7 +54,6 @@ extract () {
    fi
 }
 
-# Command
 # Search computer for file name
 se () {
   for f in $(locate $1); do dirname $f; done | uniq
